@@ -1,6 +1,9 @@
 let mixedType: string | number;
-mixedType = "Bob Marley";
-mixedType = 30;
+mixedType = "Sponge Bob"; //OK
+mixedType = 30; //OK
+// mixedType = null; //NOK
 
-type enableDisable = "enable" | "disable";
-let literalType: enableDisable;
+let enableDisable: "enable" | "disable";
+enableDisable = "enable"; //OK
+enableDisable = "disable"; //OK
+// enableDisable = 2.1 //NOK
